@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:id="@+id/activity_splashscreen"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorAzul"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView
+    android:id="@+id/tvUnifranz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="UNIFRANZ"
+    android:textSize="60dp"
+    android:textStyle="bold"
+    android:gravity="center_vertical|center_horizontal"
+    android:textColor="@color/colorBlanco"
+    />
+</RelativeLayout>

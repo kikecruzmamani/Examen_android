@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Activity_Detalle"
+    android:orientation="vertical"
+    android:background="@color/colorAzul"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fondo_lista"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:src="@drawable/unifranz"
+                android:layout_margin="30dp"/>
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:background="@color/colorPlomoOscuro"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                >
+            </View>
+
+            <EditText
+                android:id="@+id/etUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese Usuario"
+                android:textColorHint="@color/colorPlomoOscuro"
+                android:textColor="@color/colorPlomoOscuro"
+                android:backgroundTint="@color/colorPlomoOscuro"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_margin="10dp"
+                />
+
+            <EditText
+                android:id="@+id/etContraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:textColorHint="@color/colorPlomoOscuro"
+                android:textColor="@color/colorPlomoOscuro"
+                android:backgroundTint="@color/colorPlomoOscuro"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_margin="10dp"
+                android:inputType="textPassword"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_margin="10dp">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="CANCELAR"
+                    android:onClick="Cancelar"
+                    android:layout_weight="1"
+                    android:background="@drawable/botton_one"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorBlanco"
+                    />
+                <Button
+                    android:id="@+id/btIngresa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="INGRESAR"
+                    android:layout_weight="1"
+                    android:background="@drawable/botton_one"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorBlanco"
+                    android:onClick="ingresa"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    <TextView
+        android:id="@+id/tvSitio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir Sitio Web"
+        android:onClick="sitio"
+        android:textColor="@color/colorNegro"
+        android:textSize="10sp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        />
+</RelativeLayout>

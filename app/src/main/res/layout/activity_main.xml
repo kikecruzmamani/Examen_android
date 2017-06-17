@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAzul"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/fondo_lista"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Bienvenido"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="176dp"
+                android:layout_height="182dp"
+                android:src="@drawable/man" />
+
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_weight="0.88">
+
+                <TextView
+                    android:id="@+id/tvnombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enrrique Cruz"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvcorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:text="kike"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tvaños"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="25 años"
+                    android:textSize="25dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvsexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:textSize="25dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAzul"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="177dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/fondo_rojo"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="MATERIAS"
+                android:textColor="@color/colorBlanco"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/fondo_verde"
+                android:drawableRight="@+id/text2"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="MATERIAL"
+                android:textColor="@color/colorBlanco"
+                android:textSize="30dp"
+                android:layout_weight="1.88" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
